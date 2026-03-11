@@ -1,0 +1,956 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    }
+    
+    /* THANH TRÊN */
+    
+    /* TOPBAR */
+
+.topbar{
+    background:#1c90c4;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 40px;
+    font-family:Arial;
+    }
+    
+    /* bên trái */
+    
+    .topbar-left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    }
+    
+    /* hotline */
+    
+    .hotline{
+    background:#e22c2c;
+    padding:8px 15px;
+    font-weight:bold;
+    border-radius:3px;
+    }
+    
+    .hotline span{
+    font-weight:normal;
+    }
+    
+    /* search */
+    
+    .search-box input{
+    padding:8px;
+    border:none;
+    border-radius:3px;
+    }
+    
+    /* bên phải */
+    
+    .topbar-right{
+    display:flex;
+    gap:25px;
+    }
+    
+    .top-item{
+    color:white;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:bold;
+    }
+    
+    .top-item:hover{
+    text-decoration:underline;
+    }
+    
+    /* HEADER */
+    
+    .header{
+    background:#1250e0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 40px;
+    }
+    
+    
+    /* LOGO */
+    
+    .logo{
+        display:flex;
+        align-items:center;
+        gap:10px;
+        text-decoration:none;
+        }
+        
+        .logo img{
+        width:55px;
+        height:55px;
+        }
+        
+        .logo span{
+        font-size:26px;
+        font-weight:700;
+        color:#0077b6;   /* xanh biển */
+        text-decoration:none;   /* bỏ gạch chân */
+        }
+    
+    /* MENU */
+    
+    .menu > ul{
+        list-style:none;
+        margin:0;
+        padding:0;
+        display:flex;
+        }
+    
+    .menu ul li{
+    position:relative;
+    }
+    
+    .menu ul li a{
+    text-decoration:none;
+    padding:18px 20px;
+    display:block;
+    color:#333;
+    font-weight:600;
+    }
+    
+    /* Hover menu */
+    
+    .menu ul li:hover{
+    background:#6d91df;
+    }
+    
+    /* DROPDOWN */
+    
+    .dropdown-content{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:rgb(255, 255, 255);
+    min-width:200px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+    }
+    
+    .dropdown-content li{
+    display:block;
+    }
+    
+    .dropdown-content li a{
+    padding:12px 18px;
+    font-weight:500;
+    }
+    
+    .dropdown-content li a:hover{
+    background:#718de8;
+    }
+    
+    .dropdown:hover .dropdown-content{
+    display:block;
+    }
+    
+    
+    /* BANNER */
+    
+    .banner img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    }
+    
+    /* about */
+    
+    .about-section{
+        padding:80px 0;
+        width:1200px;
+        margin:auto;
+        }
+        
+        .about-title{
+        text-align:center;
+        font-size:36px;
+        color:#110d49;
+        margin-bottom:20px;
+        }
+        
+        .about-desc{
+        text-align:center;
+        max-width:900px;
+        margin:auto;
+        font-weight:600;
+        margin-bottom:40px;
+        }
+        
+        .about-text{
+        display:flex;
+        gap:40px;
+        margin-bottom:40px;
+        }
+        
+        .text-left,.text-right{
+        flex:1;
+        line-height:1.6;
+        }
+        
+        .about-images{
+        display:flex;
+        gap:20px;
+        }
+        
+        .img-left{
+        flex:2;
+        }
+        
+        .img-left img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        }
+        
+        .img-right{
+        flex:1;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:20px;
+        }
+        
+        .img-right img{
+        width:100%;
+        height:180px;
+        object-fit:cover;
+        }
+
+    /*duhoc*/
+    .country-section{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:20px;
+        padding:40px;
+        background:#f5f5f5;
+        }
+        
+        .country-slider{
+        display:flex;
+        gap:40px;
+        overflow:hidden;
+        }
+        
+        .country{
+        text-align:center;
+        min-width:150px;
+        }
+        
+        .country img{
+        width:150px;
+        height:150px;
+        border-radius:50%;
+        object-fit:cover;
+        transition:0.3s;
+        }
+        
+        .country img:hover{
+        transform:scale(1.05);
+        }
+        
+        .country p{
+        margin-top:10px;
+        color:#1e73be;
+        font-weight:600;
+        }
+        
+        .prev,
+        .next{
+        background:none;
+        border:none;
+        font-size:30px;
+        cursor:pointer;
+        color:#888;
+        }
+/* BOX KIỂM TRA TRÚNG TUYỂN */
+
+.admission-box{
+    background:#4aaaf8;
+    border-radius:25px;
+    margin:70px auto;
+    max-width:1100px;
+    padding: 35px 40px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    }
+    
+    .admission-text{
+    max-width:600px;
+    }
+    
+    .small-text{
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:10px;
+    }
+    
+    .admission-text h2{
+    font-size:42px;
+    margin-bottom:20px;
+    color:#2d2d2d;
+    }
+    
+    .desc{
+    font-size:18px;
+    margin-bottom:30px;
+    color:#2d2d2d;
+    }
+    
+    .btn-start{
+    display:inline-block;
+    background:#143545;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    }
+    
+    .btn-start:hover{
+    background:#2e46c0;
+    }
+    
+    .admission-img img{
+    width:300px;
+    }
+    /* SECTION QUỐC GIA */
+    /* ===== HỌC BỔNG ===== */
+
+    .scholarship-section{
+        text-align:center;
+        padding:80px 0;
+        background:#f5f5f5;
+    }
+
+.title{
+    font-size:36px;
+    color:#1e5aa7;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    font-size:20px;
+    color:#444;
+    margin-bottom:50px;
+}
+
+.country-container{
+    max-width:1000px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:60px;
+}
+
+.country-item{
+    text-align:center;
+}
+
+.country-item img{
+    width:140px;
+    height:140px;
+    border-radius:20px;
+    object-fit:cover;
+}
+
+.country-item a{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 30px;
+    background:#2b5ea8;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+}
+/* SECTION THỐNG KÊ */
+
+.stats-section{
+    position: relative;
+    margin: 80px auto;
+    width: 90%;
+    max-width: 1200px;
+    padding: 60px 20px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    background-image: url("./ảnh/nền\ mây.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+/* lớp làm mờ ảnh */
+.stats-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(113, 145, 196, 0.85);
+}
+
+/* nội dung */
+.stats-content{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.stats-content h2{
+    font-size:28px;
+    margin-bottom:40px;
+}
+
+/* grid */
+.stats-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:40px;
+    margin-bottom:40px;
+}
+
+.stat-box h3{
+    font-size:32px;
+}
+
+.stat-box p{
+    font-size:14px;
+}
+
+/* tổng */
+.total h1{
+    font-size:48px;
+    color:#ffd27a;
+}
+
+.total p{
+    font-size:16px;
+}
+    
+    /* SECTION HỘI THẢO */
+
+.seminar{
+    padding:50px;
+    background:#f5f5f5;
+    }
+    
+    /* tiêu đề */
+    
+    .seminar-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+    }
+    
+    .seminar-header h2{
+    color:#0a4fa3;
+    font-size:32px;
+    margin:0;
+    }
+    
+    /* nút xem tất cả */
+    
+    .view-all{
+    background:#0a4fa3;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:6px;
+    }
+    
+    .view-all:hover{
+    background:#083b7c;
+    }
+    
+    /* danh sách card */
+    
+    .seminar-list{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    }
+    
+    /* card */
+    
+    .seminar-card{
+    background:white;
+    width:260px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    border-radius:8px;
+    overflow:hidden;
+    transition:0.3s;
+    }
+    
+    .seminar-card:hover{
+    transform:translateY(-5px);
+    }
+    
+    /* ảnh */
+    
+    .seminar-card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+    }
+    
+    /* tiêu đề */
+    
+    .seminar-card h3{
+    font-size:16px;
+    padding:12px;
+    margin:0;
+    color:#333;
+    }
+    
+    /* thông tin */
+    
+    .seminar-card p{
+    padding:0 12px 10px 12px;
+    font-size:14px;
+    color:#555;
+    }
+  
+   /*CAM NANG */
+   .guide-section{
+    padding:60px 80px;
+    background:#f3f3f3;
+    }
+    
+    /* tiêu đề */
+    
+    .guide-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+    }
+    
+    .guide-header h2{
+    color:#0a4fa3;
+    font-size:36px;
+    }
+    
+    /* nút xem */
+    
+    .btn-view{
+    background:#0a4fa3;
+    color:white;
+    padding:10px 20px;
+    border-radius:6px;
+    text-decoration:none;
+    }
+    
+    /* container */
+    
+    .guide-container{
+    display:flex;
+    gap:25px;
+    }
+    
+    /* card */
+    
+    .guide-card{
+    width:25%;
+    background:white;
+    border-radius:5px;
+    overflow:hidden;
+    transition:0.3s;
+    }
+    
+    .guide-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    /* hình */
+    
+    .guide-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    }
+    
+    /* tiêu đề */
+    
+    .guide-card h3{
+    font-size:18px;
+    padding:15px;
+    line-height:1.4;
+    }
+    
+    
+    /* FOOTER */
+    
+    .footer{
+        background:#436e8b;
+        color:white;
+        padding:60px 80px;
+        font-family:Arial;
+        }
+        
+        .footer-container{
+        display:flex;
+        justify-content:space-between;
+        gap:50px;
+        }
+        
+        .footer-col{
+        width:33%;
+        }
+        
+        .footer-col h2{
+        font-size:28px;
+        margin-bottom:10px;
+        }
+        
+        .footer-col p{
+        color:#d1d1d1;
+        margin-bottom:20px;
+        }
+        
+        .email-input{
+        width:100%;
+        padding:14px;
+        border:none;
+        border-radius:5px;
+        margin-bottom:10px;
+        }
+        
+        .check{
+        font-size:14px;
+        margin-bottom:15px;
+        }
+        
+        .btn-footer{
+        background:#55626c;
+        border:none;
+        padding:12px 30px;
+        color:white;
+        border-radius:25px;
+        cursor:pointer;
+        }
+        
+        .footer-col ul{
+        list-style:none;
+        padding:0;
+        }
+        
+        .footer-col ul li{
+        margin-bottom:10px;
+        }
+        
+        .footer-col ul li a{
+        color:#ddd;
+        text-decoration:none;
+        }
+        
+        .footer-col ul li a:hover{
+        color:white;
+        }
+        
+        .social a{
+        display:block;
+        margin-bottom:10px;
+        color:#ddd;
+        text-decoration:none;
+        }
+        
+        hr{
+        margin:40px 0;
+        border-color:#555;
+        }
+        
+        .footer-bottom{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        }
+        
+        .footer-bottom select{
+        padding:10px;
+        background:#2f3f4a;
+        color:white;
+        border:1px solid #777;
+        }
+/*tintuc*/
+        .news-section{
+            width:90%;
+            margin:auto;
+            padding:60px 0;
+            }
+            
+            .news-title{
+            text-align:center;
+            font-size:32px;
+            color:#5f80d9;
+            margin-bottom:30px;
+            }
+            
+            .news-menu{
+            text-align:center;
+            margin-bottom:40px;
+            }
+            
+            .news-menu button{
+            border:1px solid #93c3dd;
+            background:white;
+            padding:10px 20px;
+            margin:5px;
+            border-radius:6px;
+            cursor:pointer;
+            }
+            
+            .news-menu button:hover{
+            background:#5e92c7;
+            color:white;
+            }
+            
+            .news-container{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            gap:25px;
+            }
+            
+            .news-item{
+            background:#f3f3f3;
+            border-radius:8px;
+            overflow:hidden;
+            }
+            
+            .news-item img{
+            width:100%;
+            height:150px;
+            object-fit:cover;
+            }
+            
+            .news-item p{
+            padding:10px;
+            font-weight:500;
+            }
+/*lienhe*/
+.contact-section{
+width:90%;
+margin:auto;
+padding:60px 0;
+}
+
+.contact-title{
+text-align:center;
+font-size:32px;
+color:#477ada;
+margin-bottom:40px;
+}
+
+.contact-container{
+display:flex;
+gap:50px;
+justify-content:center;
+}
+
+.contact-info{
+width:40%;
+background:#f3f3f3;
+padding:30px;
+border-radius:10px;
+}
+
+.contact-info h3{
+margin-bottom:20px;
+}
+
+.contact-info p{
+margin-bottom:10px;
+}
+
+.contact-form{
+width:40%;
+background:#f9f9f9;
+padding:30px;
+border-radius:10px;
+}
+
+.contact-form h3{
+margin-bottom:20px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+width:100%;
+padding:10px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.contact-form textarea{
+height:100px;
+}
+
+.contact-form button{
+background:#2b3d6a;
+color:white;
+border:none;
+padding:12px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.contact-form button:hover{
+background:#3a619f;
+}
+/*duhocmy*/
+.duhoc-page{
+width:80%;
+margin:auto;
+padding:60px 0;
+}
+
+.breadcrumb{
+margin-bottom:20px;
+color:#3a619f;
+}
+
+.duhoc-title{
+text-align:center;
+font-size:40px;
+color:#4178d0;
+margin-bottom:30px;
+}
+
+.post-info{
+display:flex;
+gap:30px;
+background:#f1f1f1;
+padding:15px;
+border-radius:10px;
+justify-content:center;
+margin-bottom:30px;
+}
+
+.duhoc-menu{
+text-align:center;
+margin-bottom:40px;
+}
+
+.duhoc-menu a{
+border:1px solid #3a619f;
+padding:10px 20px;
+margin:5px;
+display:inline-block;
+border-radius:6px;
+text-decoration:none;
+color:rgb(70, 102, 230);
+}
+
+.duhoc-menu a:hover{
+background:#3a619f;
+color:white;
+}
+
+.duhoc-content h2{
+margin-top:40px;
+color:#3a619f;
+}
+
+.duhoc-content p{
+line-height:1.6;
+margin:10px 0;
+}
+
+/*hoc bong uc*/
+.form-tuvan{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    width:300px;
+    }
+    
+    .form-tuvan input,
+    .form-tuvan select{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    }
+    
+    .form-tuvan button{
+    padding:10px;
+    background:#567ce4;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    }
+    
+    .form-tuvan button:hover{
+    background:#6083f6;
+    }
+
+/*visa nhat*/
+.form-tuvan{
+margin-top:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+width:300px;
+}
+
+.form-tuvan input,
+.form-tuvan select{
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.form-tuvan button{
+padding:10px;
+background:#4d6cd2;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.form-tuvan button:hover{
+background:#4d6cd2;
+}
+
+/*truong han*/
+.form-tuvan{
+margin-top:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+width:300px;
+}
+
+.form-tuvan input,
+.form-tuvan select{
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.form-tuvan button{
+padding:10px;
+background:#466ef0;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.form-tuvan button:hover{
+background:#458ed8;
+}
